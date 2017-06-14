@@ -4,14 +4,14 @@
 
 [Cyber Trust](https://cybertrust.labranet.jamk.fi/ct/public/blob/master/README.md)
 
-[Case Zodiac FX](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/ZodiacFX/README.md)
+[Case Zodiac FX](https://github.com/mikaelmalste/SDN/blob/master/ZodiacFX/README.md)
 
-[Case Raspberry Pi](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Raspberry/README.md)
+[Case Raspberry Pi](https://github.com/mikaelmalste/SDN/blob/master/Raspberry/README.md)
 
-[Raspberry Pi documentation](https://cybertrust.labranet.jamk.fi/cf2017/overflow/tree/master/Raspberry)
+[Raspberry Pi documentation](https://github.com/mikaelmalste/SDN/blob/master/Raspberry/README.md)
 
-[Cisco configuration](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Cisco/README.md)
+[Cisco configuration](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
 
-[PfSense configuration](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/PfSense/README.md)
+[PfSense configuration](https://github.com/mikaelmalste/SDN/blob/master/PfSense/README.md)
 
-[Zodiac FX configuration](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/ZodiacFX/Zodiac_conf.txt)
+[Zodiac FX configuration](https://github.com/mikaelmalste/SDN/blob/master/ZodiacFX/Zodiac_conf.txt)

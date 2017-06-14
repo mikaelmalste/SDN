@@ -1,4 +1,4 @@
-<img src="https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/overflow_A3.png" width="800" />
+<img src="https://github.com/mikaelmalste/SDN/blob/master/pictures/overflow_A3.png" width="800" />
 
 [Wiki](https://github.com/mikaelmalste/SDN/wiki)
 

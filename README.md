@@ -6,11 +6,11 @@
 
 [Case Zodiac FX](https://github.com/mikaelmalste/SDN/blob/master/ZodiacFX/README.md)
 
-[Case Raspberry Pi](https://github.com/mikaelmalste/SDN/blob/master/Raspberry/README.md)
-
-[Raspberry Pi documentation](https://github.com/mikaelmalste/SDN/blob/master/Raspberry/README.md)
-
 [Cisco configuration](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
+
+[Raspberry Pi Access-Point](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/README.md)
+
+[Raspberry Pi Switches](https://github.com/mikaelmalste/SDN/blob/master/RaspberrySwitches/README.md)
 
 [PfSense configuration](https://github.com/mikaelmalste/SDN/blob/master/PfSense/README.md)
 

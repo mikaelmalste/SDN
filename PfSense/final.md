@@ -58,7 +58,7 @@ Download login page and add it.
 
 Use RADIUS authentication and CHAP-MD5 protocol. Add RADIUS-server IP-address, port and password.
 
-![Captive Portal1](hhttps://github.com/mikaelmalste/SDN/blob/master/pictures/captive1.png?raw=true)
+![Captive Portal1](https://github.com/mikaelmalste/SDN/blob/master/pictures/captive1.png?raw=true)
 
 After succesful connection, login page appears. Here is an example of our login page.
 

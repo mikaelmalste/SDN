@@ -10,13 +10,13 @@ After building and configuring the physical network, host-devices (Access-Points
 
 ### Devices
 
-List of devices needed. You can find used versions from __[here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Random/versions.md).__
+List of devices needed. You can find used versions from __[here](https://github.com/mikaelmalste/SDN/blob/master/Random/versions.md).__
 
-* [Cisco Catalyst 2950 Switch](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Cisco/README.md)
-* [PfSense Firewall](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/PfSense/final.md)
+* [Cisco Catalyst 2950 Switch](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
+* [PfSense Firewall](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md)
 * [Puikkari SDN-controller](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation)
-* [4 Zodiac FX switches](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/ZodiacFX/Zodiac_conf.txt)
-* [2 Raspberry Pi Access-Points](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberryAccessPoint/README.md)
+* [4 Zodiac FX switches](https://github.com/mikaelmalste/SDN/blob/master/ZodiacFX/Zodiac_conf.txt)
+* [2 Raspberry Pi Access-Points](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/final.md)
 
 ### IP-Addresses
 
@@ -35,7 +35,7 @@ List of devices needed. You can find used versions from __[here](https://cybertr
 
 PfSense's main function is to serve as Firewall, DHCP-server and routing point in our network. All switches have straight connection to SDN-controller throught Cisco Catalyst 2950-switch. Switches communicate with controller via OpenFlow-protocol. Every Zodiac FX-switch has dedicated port for Management-traffic (Port4).
 
-![First topology](https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/topologia1.png)
+![First topology](https://github.com/mikaelmalste/SDN/blob/master/pictures/topologia1.png?raw=true)
 
 ### Usernames and passwords
 |Device| Username | Password  |
@@ -61,13 +61,13 @@ We decided to capture traffic from Puikkari controller and analyze the TCPDUMP-f
 
 ### Devices
 
-List of devices needed. You can find used versions from __[here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Random/versions.md).__
+List of devices needed. You can find used versions from __[here](https://github.com/mikaelmalste/SDN/blob/master/Random/versions.md).__
 
-* [Cisco Catalyst 2950 Switch](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Cisco/README.md)
-* [PfSense Firewall](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/PfSense/final.md)
+* [Cisco Catalyst 2950 Switch](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
+* [PfSense Firewall](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md)
 * [Puikkari SDN-controller](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation)
-* [2 Zodiac FX switches](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/ZodiacFX/Zodiac_conf.txt)
-* [Raspberry Pi Access-Point](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberryAccessPoint/README.md)
+* [4 Zodiac FX switches](https://github.com/mikaelmalste/SDN/blob/master/ZodiacFX/Zodiac_conf.txt)
+* [2 Raspberry Pi Access-Points](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/final.md)
 
 ### IP-Addresses
 
@@ -82,7 +82,7 @@ List of devices needed. You can find used versions from __[here](https://cybertr
 ### Second topology:
 
 PfSense's main function is to serve as Firewall, DHCP-server and routing point in our network. All switches have straight connection to SDN-controller throught Cisco Catalyst 2950-switch. Switches communicate with controller via OpenFlow-protocol. Every Zodiac FX-switch has dedicated port for Management-traffic (Port4).
-![Second topology](https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/topologia2.png)
+![Second topology](https://github.com/mikaelmalste/SDN/blob/master/pictures/topologia2.png?raw=true)
 
 ### Usernames and passwords
 
@@ -97,8 +97,8 @@ PfSense's main function is to serve as Firewall, DHCP-server and routing point i
 
 After hours of analyzing the traffic capture, we figure out that the Group Mod action was the cause of all our problems. Zodiac FX-switches don't have support for Group Mod action. We updated the firmware to latest version, but that didn't fix the issue. [Here](https://github.com/NorthboundNetworks/ZodiacFX/issues/81) is the link for our problem that is posted as an issue to Zodiac FX forum.
 
-<img src="https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/grp_mod.png" width="800" />
+<img src="https://github.com/mikaelmalste/SDN/blob/master/pictures/grp_mod.png?raw=true" width="800" />
 
 Screen capture of Group Mod error from Wireshark.
 
-<img src="https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/grp_mod_error.png" width="800" />
+<img src="https://github.com/mikaelmalste/SDN/blob/master/pictures/grp_mod_error.png?raw=true" width="800" />

@@ -1,0 +1,72 @@
+sudo apt-get update -y
+sudo apt-get install -y autoconf libtool openssl pkg-config make gcc libssl-dev
+sudo git clone git://git.kernel.org/pub/scm/devel/sparse/sparse.git
+cd sparse
+sudo make
+sudo make install
+cd ..
+sudo git clone https://github.com/openvswitch/ovs.git
+cd ovs/
+sudo apt-get install dh-autoreconf -y
+export LC_ALL=C
+sudo ./boot.sh
+sudo ./configure --prefix=/usr --localstatedir=/var --sysconfdir=/etc
+sudo apt-get install python-pip -y
+pip install six
+sudo make –j3
+sudo make install
+sudo cp debian/openvswitch-switch.init /etc/init.d/openvswitch-switch
+sudo /etc/init.d/openvswitch-switch start
+sudo ovs-vsctl show
+
+
+sudo /etc/init.d/openvswitch-switch start
+sudo ovs-vsctl add-br br0
+sudo ovs-vsctl add-port br0 eth0
+sudo ovs-vsctl add-port br0 eth1
+sudo ovs-vsctl add-port br0 eth2
+sudo ovs-vsctl add-port br0 eth3
+
+sudo ovs-vsctl set-controller br0 tcp:192.168.1.100:6633
+
+watch -n 0.5 'sudo ovs-ofctl dump-flows br0'
+
+sudo ovs-ofctl show br0
+ovs-appctl bridge/dump-flows br0
+ovs-vsctl set controller br0 connection-mode=out-of-band
+
+
+ip link add link eth0 name eth0.5 type vlan id 5
+ip -d link show eth 0.5
+
+
+auth_server_addr=192.168.2.1
+auth_server_port=1812
+auth_server_shared_secret=Kissa123
+wpa_key_mgmt=WPA-EAP
+disable_pmksa_caching=1			can be used to disable caching of PMKSA created through EAP authentication
+okc=0					reduce the time needed for authentication. station can roam to a new AP that has not visited before and reuse a PMK that was established with the current AP
+eapol_key_index_workaround=1		for WinXP Supplicant (needed only if only broadcast keys are used)
+ieee8021x=1				Require IEEE 802.1X authorization
+wpa_group_rekey=2000			Time interval for rekeying GTK (broadcast/multicast encryption keys) in seconds.
+auth_algs=1				Open system authentication should be used with IEEE 802.1X
+wpa=2
+wpa_pairwise=CCMP
+interface=wlan0
+bridge=br0
+driver=nl80211
+ssid=SDN-testi2
+hw_mode=g
+channel=10
+macaddr_acl=0
+rsn_preauth=1
+rsn_preauth_interfaces=br0
+
+Port mirror:
+Switch(config)# no monitor session 1
+Switch(config)# monitor session 1 source interface fastEthernet0/1
+Switch(config)# monitor session 1 destination interface fastEthernet0/10 encapsulation dot1q
+
+
+
+

@@ -6,7 +6,7 @@
 
 __[Final working solution](https://github.com/mikaelmalste/SDN/blob/master/FinalVersion/README.md)__
 
-[Puikkari installation](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation)
+[Puikkari installation](https://github.com/mikaelmalste/SDN/wiki/Puikkari-installation)
 
 ### Configurations
 

@@ -2,17 +2,17 @@
 
 Create SDN-network with three Raspberry Pi-switches and two Access-Points. This documentation is for inbound management connection to Access-Points. In order to create this setup case, follow these instructions below.
 
-![Topology](https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/topologia3.png)
+![Topology](https://github.com/mikaelmalste/SDN/blob/master/pictures/topologia3.png?raw=true)
 
 ### Devices
 
-List of devices needed. You can find used versions from __[here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Random/versions.md).__
+List of devices needed. You can find used versions from __[here](https://github.com/mikaelmalste/SDN/blob/master/Random/versions.md).__
 
-* [Cisco Catalyst 2950 Switch](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Cisco/README.md)
-* [PfSense Firewall](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/PfSense/final.md)
+* [Cisco Catalyst 2950 Switch](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
+* [PfSense Firewall](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md)
 * [Puikkari SDN-controller](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation)
-* [3 Raspberry Pi Switches](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberrySwitches/README.md)
-* [2 Raspberry Pi Access-Points](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberryAccessPoint/README.md)
+* [3 Raspberry Pi Switches](https://github.com/mikaelmalste/SDN/blob/master/RaspberrySwitches/README.md)
+* [2 Raspberry Pi Access-Points](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/final.md)
 
 ## Puikkari installation
 
@@ -20,17 +20,17 @@ You can find Puikkari installation documentation from [here](https://cybertrust.
 
 ## PfSense installation
 
-You can find PfSense installation documentation from [here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/PfSense/summary.md).
+You can find PfSense installation documentation from [here](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md).
 
 ## Raspberry-Pi switches installation
 
 First you have to install NOOBS to your Raspberry Pi. [Here](https://www.raspberrypi.org/help/noobs-setup/2/) is simple instructions for install process.
-You can find Raspberry-Pi switches installation documentation from [here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberrySwitches/README.md).
+You can find Raspberry-Pi switches installation documentation from [here](https://github.com/mikaelmalste/SDN/blob/master/RaspberrySwitches/README.md).
 
 ## Raspberry-Pi Access-Points installation
 
 First you have to install NOOBS to your Raspberry Pi. [Here](https://www.raspberrypi.org/help/noobs-setup/2/) is simple instructions for install process.
-You can find Raspberry-Pi Access-Points installation documentation from [here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberryAccessPoint/README.md).
+You can find Raspberry-Pi Access-Points installation documentation from [here](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/README.md).
 
 ### IP-Addresses
 

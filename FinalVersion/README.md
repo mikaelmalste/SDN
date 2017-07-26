@@ -5,17 +5,17 @@ By doing this we were able to isolate issue caused by VLANs, and focus on WLAN i
 
 We also configured RADIUS authentication and Captive Portal- services running on PfSense.
 
-![Topology](https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/topologia4.png)
+![Topology](https://github.com/mikaelmalste/SDN/blob/master/pictures/topologia4.png?raw=true)
 
 ### Devices
 
-List of devices needed. You can find used versions from __[here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Random/versions.md).__
+List of devices needed. You can find used versions from __[here](https://github.com/mikaelmalste/SDN/blob/master/Random/versions.md).__
 
-* [Cisco Catalyst 2950 Switch](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/Cisco/README.md)
-* [PfSense Firewall](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/PfSense/final.md)
+* [Cisco Catalyst 2950 Switch](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
+* [PfSense Firewall](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md)
 * [Puikkari SDN-controller](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation)
-* [3 Raspberry Pi Switches](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberrySwitches/README.md)
-* [2 Raspberry Pi Access-Points](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberryAccessPoint/final.md)
+* [3 Raspberry Pi Switches](https://github.com/mikaelmalste/SDN/blob/master/RaspberrySwitches/README.md)
+* [2 Raspberry Pi Access-Points](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/final.md)
 
 ## Puikkari installation
 
@@ -23,12 +23,12 @@ You can find Puikkari installation documentation from [here](https://cybertrust.
 
 ## PfSense installation
 
-You can find PfSense installation documentation from [here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/PfSense/final.md).
+You can find PfSense installation documentation from [here](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md).
 
 ## Raspberry-Pi switches installation
 
 First you have to install NOOBS to your Raspberry Pi. [Here](https://www.raspberrypi.org/help/noobs-setup/2/) is simple instructions for install process. 
-You can find Raspberry-Pi switch installation instructions [here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/tree/master/RaspberrySwitches#raspberry-pi-switches-installation).
+You can find Raspberry-Pi switch installation instructions [here](https://github.com/mikaelmalste/SDN/tree/master/RaspberrySwitches#raspberry-pi-switches-installation).
 
 __New front-end (Puikkari) port configurations can be found below.__
 
@@ -36,7 +36,7 @@ __New front-end (Puikkari) port configurations can be found below.__
 
 Open Puikkari front-end from your browser. Address is your network interfaces address. For example in this documentation the address is 192.168.51.133.
 
-<img src="https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/interface_conf.png" width="600" />
+<img src="https://github.com/mikaelmalste/SDN/blob/master/pictures/interface_conf.png?raw=true" width="600" />
 
 You can edit port configurations by double clicking the switch.
 
@@ -81,7 +81,7 @@ You can edit port configurations by double clicking the switch.
 ## Raspberry-Pi Access-Points installation
 
 First you have to install NOOBS to your Raspberry Pi. [Here](https://www.raspberrypi.org/help/noobs-setup/2/) is simple instructions for install process.
-You can find Raspberry-Pi Access-Points installation instructions [here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/RaspberryAccessPoint/final.md).
+You can find Raspberry-Pi Access-Points installation instructions [here](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/final.md).
 
 ### IP-Addresses
 
@@ -107,11 +107,11 @@ You can find Raspberry-Pi Access-Points installation instructions [here](https:/
 
 # Video taken from login and testing network
 
-You can watch the video [here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/Wlan_cp_connection).
+You can watch the video [here](https://github.com/mikaelmalste/SDN/blob/master/pictures/Wlan_cp_connection).
 
-__[Here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/blob/master/pictures/final_optimization.ogv) you can watch how links are optimized between different traffic.__
+__[Here](https://github.com/mikaelmalste/SDN/blob/master/pictures/final_optimization.ogv) you can watch how links are optimized between different traffic.__
 
-![Final links](https://cybertrust.labranet.jamk.fi/cf2017/overflow/raw/master/pictures/final_links.png)
+![Final links](https://github.com/mikaelmalste/SDN/blob/master/pictures/final_links.png)
 
 Colors indicate how much traffic is going through the links.
 

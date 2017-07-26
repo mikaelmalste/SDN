@@ -1,0 +1,45 @@
+49b3 = Raspi1
+port10 = eth1		internal
+port11 = eth2		internal
+
+86b2 = Raspi2
+port6 = eth1		edge, to pfsense
+port7 = eth2		internal
+port8 = eth3		internal	
+port9 = eth4		internal , to AP
+                        edge
+
+864e = Raspi3
+port4 = eth1		internal
+port5 = eth2		edge
+port6 = eth3		internal
+
+
+61ee = AP BR1
+port1 = internal
+port2 = edge
+
+
+Raspi1:		port state	priority	traff match		port conf
+
+Port2 eth3	edge							{"vlan":100}
+Port3 eth1	internal						{"lldp_listen":true,"lldp_send":true,"lldp_send_interval":2}
+Port11 eth2	internal						{"lldp_listen":true,"lldp_send":true,"lldp_send_interval":2}
+
+Raspi2:
+
+Port6 eth1	edge
+Port7 eth2	internal						{"lldp_listen":true,"lldp_send":true,"lldp_send_interval":2}
+Port8 eth3	internal						{"lldp_listen":true,"lldp_send":true,"lldp_send_interval":2}
+Port9 eth4	edge				{"vlan_vid":5}		{"retag_vlan":true,"untag_vlan":true,"vlan":100}
+Port9 veth4	internal	555					{"lldp_listen":true,"lldp_send":true,"lldp_send_interval":2}
+
+Raspi3:
+
+Port4 eth1	disabled
+Port5 eth2	internal						{"lldp_listen":true,"lldp_send":true,"lldp_send_interval":2}
+Port6 eth3	internal						{"lldp_listen":true,"lldp_send":true,"lldp_send_interval":2}
+
+AP2:
+Port1:		internal						{"lldp_listen":true,"lldp_send":true,"lldp_send_interval":2}
+Port2:		edge

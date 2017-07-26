@@ -1,0 +1,7 @@
+Zodiac_FX# config
+Zodiac_FX(config)# set ip-address 192.168.1.11
+Zodiac_FX(config)# set netmask 255.255.255.0
+Zodiac_FX(config)# set gateway 192.168.1.1
+Zodiac_FX(config)# set of-controller 192.168.1.100
+Zodiac_FX(config)# set of-port 6633
+Zodiac_FX(config)# save

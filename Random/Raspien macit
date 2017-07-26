@@ -1,0 +1,43 @@
+Raspi1:
+br0:        d4:6e:0e:08:49:b3
+eth0:       b8:27:eb:ea:06:6d 
+eth1:       f4:f2:6d:17:a8:c8
+eth2:       d4:6e:0e:1e:be:1b
+eth3:	    d4:6e:0e:08:49:b3 
+ovs-system: 1e:07:a0:ff:0b:66 
+
+Raspi2:
+br0:        60:e3:27:20:86:b2
+eth0:       b8:27:eb:e5:e9:55 
+eth1:       60:e3:27:20:86:b2
+eth2:       f4:f2:6d:10:66:dd
+eth3:       f4:f2:6d:1d:c4:3a
+eth4:       f4:f2:6d:18:c9:6b
+ovs-system: ce:1a:da:80:5e:7b
+
+Raspi3:
+br0:        60:e3:27:20:86:4e
+eth0:       b8:27:eb:65:6d:cd 
+eth1:       f4:f2:6d:1d:c5:3c
+eth2:       60:e3:27:20:86:4e
+eth3: 	    f4:f2:6d:17:a8:bb 
+ovs-system: b6:df:76:1a:c6:45
+
+AP:
+Br1:        b8:27:eb:1f:61:ee
+Br0: 	    b8:27:eb:4a:34:bb
+eth0:       b8:27:eb:1f:61:ee
+eth0.5:     b8:27:eb:1f:61:ee
+Veth00:     f6:74:8f:69:76:ab 
+Veth11:     82:70:1b:0c:ff:c1
+Wlan0:      b8:27:eb:4a:34:bb
+ovs-system: 86:19:0c:63:10:a3
+
+Puikkari:
+Enp1s0:     a0:36:9f:c6:f5:f8
+
+PfSense
+Igb0:	    a0:36:9f:c6:f3:78
+Igb1:	    a0:36:9f:c6:f2:dc
+Igb2:	    a0:36:9f:c6:f2:e3
+em0:	    70:5a:0f:3a:89:68

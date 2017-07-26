@@ -14,7 +14,7 @@ List of devices needed. You can find used versions from __[here](https://github.
 
 * [Cisco Catalyst 2950 Switch](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
 * [PfSense Firewall](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md)
-* [Puikkari SDN-controller](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation)
+* [Puikkari SDN-controller](https://github.com/mikaelmalste/SDN/wiki/Puikkari-installation)
 * [4 Zodiac FX switches](https://github.com/mikaelmalste/SDN/blob/master/ZodiacFX/Zodiac_conf.txt)
 * [2 Raspberry Pi Access-Points](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/final.md)
 
@@ -65,7 +65,7 @@ List of devices needed. You can find used versions from __[here](https://github.
 
 * [Cisco Catalyst 2950 Switch](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
 * [PfSense Firewall](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md)
-* [Puikkari SDN-controller](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation)
+* [Puikkari SDN-controller](https://github.com/mikaelmalste/SDN/wiki/Puikkari-installation)
 * [4 Zodiac FX switches](https://github.com/mikaelmalste/SDN/blob/master/ZodiacFX/Zodiac_conf.txt)
 * [2 Raspberry Pi Access-Points](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/final.md)
 

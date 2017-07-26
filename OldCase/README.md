@@ -10,13 +10,13 @@ List of devices needed. You can find used versions from __[here](https://github.
 
 * [Cisco Catalyst 2950 Switch](https://github.com/mikaelmalste/SDN/blob/master/Cisco/README.md)
 * [PfSense Firewall](https://github.com/mikaelmalste/SDN/blob/master/PfSense/final.md)
-* [Puikkari SDN-controller](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation)
+* [Puikkari SDN-controller](https://github.com/mikaelmalste/SDN/wiki/Puikkari-installation)
 * [3 Raspberry Pi Switches](https://github.com/mikaelmalste/SDN/blob/master/RaspberrySwitches/README.md)
 * [2 Raspberry Pi Access-Points](https://github.com/mikaelmalste/SDN/blob/master/RaspberryAccessPoint/final.md)
 
 ## Puikkari installation
 
-You can find Puikkari installation documentation from [here](https://cybertrust.labranet.jamk.fi/cf2017/overflow/wikis/puikkari/installation).
+You can find Puikkari installation documentation from [here](https://github.com/mikaelmalste/SDN/wiki/Puikkari-installation).
 
 ## PfSense installation
 
